@@ -16,10 +16,6 @@
 #include <rsc/logging/ConsoleLogger.h>
 #include <rsc/logging/LoggerFactory.h>
 
-#include <sdf/sdf.hh>
-#include <sdf/parser.hh>
-#include <sdf/Element.hh>
-
 #include <stdio.h>
 #include <time.h>
 
