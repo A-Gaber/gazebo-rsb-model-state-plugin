@@ -30,3 +30,7 @@ ADD_DEFINITIONS(${RST_CFLAGS} ${RSTSANDBOX_CFLAGS})
 
 add_library(${PROJECT_NAME} SHARED src/gazebo-rsb-model-state-plugin.cpp src/gazebo-rsb-model-state-plugin.hpp)
 target_link_libraries(${PROJECT_NAME} ${GAZEBO_LIBRARIES} ${Boost_LIBRARIES} ${RSC_LIBRARIES} ${RSB_LIBRARIES} ${RST_LIBRARIES} ${RSTSANDBOX_LIBRARIES})
+
+install(TARGETS ${PROJECT_NAME}
+     RUNTIME DESTINATION bin COMPONENT libraries
+     LIBRARY DESTINATION lib COMPONENT libraries)
