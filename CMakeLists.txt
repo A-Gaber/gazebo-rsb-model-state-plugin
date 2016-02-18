@@ -34,3 +34,4 @@ target_link_libraries(${PROJECT_NAME} ${GAZEBO_LIBRARIES} ${Boost_LIBRARIES} ${R
 install(TARGETS ${PROJECT_NAME}
      RUNTIME DESTINATION bin COMPONENT libraries
      LIBRARY DESTINATION lib COMPONENT libraries)
+# TODO change lib to lib/gazebo-plugins
